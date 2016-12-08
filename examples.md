@@ -75,7 +75,7 @@ Source: TODO (convert internal program to public)
 
 ## Compare Parameters
 
-This report makes it trival to compare all database parameters, for any set of databases, at one time.
+This report makes it trivial to compare all database parameters, for any set of databases, at one time.
 
 <img src="/images/example_compare_parameters.png">
 
