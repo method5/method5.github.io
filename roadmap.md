@@ -13,7 +13,7 @@ Release History:
 Possible Future Changes:
 ------------------------
 
-The plans get increasingly more speculative as the time increases.  If you would like to request a feature please [create an issue on the repository](https://github.com/VentechCMS/method5/issues) or email me at hjon@ventechsolutions.com.
+The plans get increasingly more speculative as the time increases.  If you would like to request a feature please [create an issue on the repository](https://github.com/method5/method5/issues) or email me at hjon@ventechsolutions.com.
 
 * **v8.2.0, 2016 December**: Added job timeouts, performance improvements.
 * **v9, 2017**: Run shell scripts.  I've been using an internal solution for this, but it needs to be re-designed to work in other environments.
