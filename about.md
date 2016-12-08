@@ -19,7 +19,7 @@ permalink: /about/
 
   <tr valign="middle">
     <td>
-      Method5 was developed to support one of the world's largest healthcare data centers at the Centers for Medicaire & Medicaid Services (CMS).  It was open sourced as part of the new Federal Source Code Policy.
+      Method5 was developed to support one of the world's largest healthcare data centers at the Centers for Medicare & Medicaid Services (CMS).  It was open sourced as part of the new Federal Source Code Policy.
     </td>
     <td>
       <a href="https://www.cms.gov">
