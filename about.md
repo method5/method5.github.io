@@ -12,7 +12,7 @@ permalink: /about/
     </td>
     <td>
       <a href="http://stackoverflow.com/users/409172/jon-heller">
-      <img src="http://stackoverflow.com/users/flair/409172.png" width="208" height="58" alt="profile for Jon Heller at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Jon Heller at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+      <img src="https://stackoverflow.com/users/flair/409172.png" width="208" height="58" alt="profile for Jon Heller at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Jon Heller at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
     </a>
     </td>
   </tr>
