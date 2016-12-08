@@ -19,5 +19,5 @@ Release History:
 ----------------
 
 * **2016-11** *v8.1.0:* Added CLUSTER_NAME and Target Groups.
-* **2016-10** *8.0.0:* Initial public release.
-* **2014 to 2016** *0.0.1 to 7.6.0:* Internal project.
+* **2016-10** *v8.0.0:* Initial public release.
+* **2014 to 2016** *v0.0.1 to v7.6.0:* Internal project.
