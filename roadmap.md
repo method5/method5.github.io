@@ -6,7 +6,6 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2016-12** _v8.2.0_: Add job timeouts, performance improvements.
 * **2017** _v9: Run shell scripts._  I've been using an internal solution for this, but it needs to be re-designed to work in other environments.
 * **2017** _v10: Run as SYS and run as SQL\*Plus._  These aren't particularly useful but may be necessary to convince some old-school DBAs.
 * **2017** _v11: Offline shell script running with scheduler agents._  This optional feature would add a lot of complexity.  But it would allow Method5 to automate boring tasks like installations and patching.  This would make it a more direct competitor to products like Salt and Ansible.
@@ -18,6 +17,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2016-12** *v8.2.0:* Added job timeouts, bug fixes and performance improvements.
 * **2016-11** *v8.1.0:* Added CLUSTER_NAME and Target Groups.
 * **2016-10** *v8.0.0:* Initial public release.
 * **2014 to 2016** *v0.0.1 to v7.6.0:* Internal project.
