@@ -19,10 +19,11 @@ title: Method5 User Guide
 10. [Parameter: P_TABLE_EXISTS_ACTION](#parameter_p_table_exists_action)
 11. [Parameter: P_ASYNCHRONOUS](#parameter_p_asynchronous)
 12. [M5 Links](#m5_links)
-13. [Services for Non-DBAs](#services_for_non_dbas)
-14. [Job Timeout](#job_timeout)
-15. [Security](#security)
-16. [Possible Uses](#possible_uses)
+13. [Global Data Dictionary](#global_data_dictionary)
+14. [Services for Non-DBAs](#services_for_non_dbas)
+15. [Job Timeout](#job_timeout)
+16. [Security](#security)
+17. [Possible Uses](#possible_uses)
 
 
 <a name="introduction"/>
