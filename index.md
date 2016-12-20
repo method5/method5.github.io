@@ -27,4 +27,4 @@ See [the user guide](https://github.com/VentechCMS/method5/blob/master/user_guid
 
 For more information explore this website, check out [the GitHub repository](https://github.com/method5/method5), or watch the video demo below.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/eGWlR_gHkOI?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/Q_B9cVVM824?rel=0" frameborder="0" allowfullscreen></iframe>
