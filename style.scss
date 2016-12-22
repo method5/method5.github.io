@@ -165,9 +165,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 200px;
+  margin-right: 40px;
 
   @include mobile {
     float: none;
@@ -182,6 +181,8 @@ img {
 
 .site-info {
   float: left;
+  margin-top: 15px;
+  font-style: italic;
 
   @include mobile {
     float: none;
@@ -212,9 +213,11 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 0px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-color: red;
 
   @include mobile {
     float: none;
