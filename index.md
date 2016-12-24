@@ -23,11 +23,13 @@ You can run any SQL or PL/SQL statement inside the `M5` function. The function w
 
 Method5 helps DBAs quickly solve many operational problems.  It can also provide a solid foundation for building robust solutions to common database problems, such as:
 
-* Account Management
-* Monitoring
-* Security Compliance
-* Configuration Management
-* Preventive Maintenance
+<ul class="checkmark">
+  <li> Account Management</li>
+  <li> Monitoring</li>
+  <li> Security Compliance</li>
+  <li> Configuration Management</li>
+  <li> Preventive Maintenance</li>
+</ul>
 
 This can tip the scales in favor of custom solutions instead of expensive commercial software.
 
