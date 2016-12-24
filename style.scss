@@ -86,6 +86,13 @@ ul {
   list-style-type: disc;
 }
 
+ul.checkmark {
+    list-style-type:none;
+}
+ul.checkmark li:before {
+    content:"\2713\0020";
+}
+
 ol {
   list-style-type: decimal;
 }
