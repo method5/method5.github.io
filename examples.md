@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Examples
+#This page is the same as https://github.com/method5/method5/blob/master/scripts/readme.md.
+#It would be nice if  there was an easier way to import it instead of repeating it.
 ---
 
 Unlike other automation programs, you generally don't need pre-built "recipes" or "playbooks" to use Method5.  Good DBAs already have loads of useful SQL and PL/SQL statements, it's usually trivial to use them in Method5.
