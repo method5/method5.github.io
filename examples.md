@@ -24,6 +24,7 @@ And the advanced examples show the full power of Method5.  When the data gatheri
 1. [Account Maintenance.sql](#account_maintenance)
 2. [Email Active DBA Users Job.sql](#email_active_dba_users_job)
 3. [Lock Users with Old Password Job.sql](#lock_users_with_old_password_job)
+4. [Global Database Statistics.sql](#global_database_statistics)
 
 ---
 
@@ -35,7 +36,7 @@ With a few clicks you can compare schemas between an *unlimited* number of datab
 
 The screenshot shows the output exported to a spreadsheet.  The dense output may look cryptic at first but eventually it will allow you to rapidly identify schema differences.  The letters refer to different versions of the same object.  The columns on the right-hand side contain the entire DDL if you click on the cell.
 
-<img src="/images/example_compare_everything_everywhere.png">
+<img src="images/example_compare_everything_everywhere.png">
 
 Source: TODO (convert internal program to public)
 
@@ -120,3 +121,9 @@ Source: TODO (convert internal program to public)
 Did you know that Oracle accounts may automatically *expire* but never *lock*?  The security auditors do and they often expect a job to automatically lock old accounts.
 
 Source: TODO (convert internal program to public)
+
+<a name="global_database_statistics"/>
+
+## Global Database Statistics
+
+Convey the complexity of your environment through a few simple statistics, such as database count, schema count, object count, physical I/O per day, connections per day, queries per day, and segment size.
