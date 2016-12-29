@@ -3,6 +3,9 @@ layout: page
 title: Examples
 #This page is the same as https://github.com/method5/method5/blob/master/scripts/readme.md.
 #It would be nice if  there was an easier way to import it instead of repeating it.
+#Differences between pages:
+# 1. This version needs a "/" in front of the images src directory.
+# 2. This version contains a link to the repository.
 ---
 
 Unlike other automation programs, you generally don't need pre-built "recipes" or "playbooks" to use Method5.  Good DBAs already have loads of useful SQL and PL/SQL statements, it's usually trivial to use them in Method5.
@@ -26,6 +29,8 @@ And the advanced examples show the full power of Method5.  When the data gatheri
 3. [Lock Users with Old Password Job.sql](#lock_users_with_old_password_job)
 4. [Global Database Statistics.sql](#global_database_statistics)
 
+The source code for these examples can be found at [the GitHub repository](https://github.com/method5/method5/tree/master/scripts).  (Note: Not all of the script source code will be available until February 2017.  I am still in the process of converting our internal scripts to public scripts.)
+
 ---
 
 <a name="compare_everything_everywhere"/>
@@ -36,7 +41,7 @@ With a few clicks you can compare schemas between an *unlimited* number of datab
 
 The screenshot shows the output exported to a spreadsheet.  The dense output may look cryptic at first but eventually it will allow you to rapidly identify schema differences.  The letters refer to different versions of the same object.  The columns on the right-hand side contain the entire DDL if you click on the cell.
 
-<img src="images/example_compare_everything_everywhere.png">
+<img src="/images/example_compare_everything_everywhere.png">
 
 Source: TODO (convert internal program to public)
 
