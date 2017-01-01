@@ -8,6 +8,7 @@ Possible Future Changes:
 
 * **2017-01** _Scripts._  Add useful scripts.  I've already got about 10 of them but they need to be cleaned up before they are released to the public.
 * **2017** _v9: Run shell scripts._  I've been using an internal solution for this, but it needs to be re-designed to work in other environments.
+* **2017** _v9.1: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
 * **2017** _v10: Run as SYS and run as SQL\*Plus._  These aren't particularly useful but may be necessary to convince some old-school DBAs.
 * **2017** _v11: Offline shell script running with scheduler agents._  This optional feature would add a lot of complexity.  But it would allow Method5 to automate boring tasks like installations and patching.  This would make it a more direct competitor to products like Salt and Ansible.
 * **2018** _v12: Web interface._  Method5 is a SQL extension, part of a programming language.  A website doesn't make sense in a lot of ways.  But eventually this may be necessary to convince managers.
