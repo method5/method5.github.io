@@ -1,0 +1,119 @@
+================================================================================
+== Method5 Video
+================================================================================
+
+##Introduction
+
+Method5 is an open source program that extends Oracle SQL to allow parallel remote execution.  I'll show you what that means and how you can use it.
+
+##Simple Example
+
+Take any regular SQL or PL/SQL statement:
+
+[CODE]
+
+This returns one result from one database.
+
+Add a few keywords and now you can execute that statement on all your databases at one time:
+
+[CODE]
+
+##Advantages
+
+A lot of things just happened from such a simple statement.
+
+1. Performance - Results start returning in seconds because of parallel and asynchronous processing.
+2. Interface - The entire program lives inside that `M5` function.  [higlight function]  This code works just as well in SQL*Plus, Oracle SQL Developre, TOAD, or any other program.
+3. Relational Data - The data is a regular table.  [highlight rows].  The program is purely relational and only lives in a database.  The results are easy to save, share, and join.  You can use all your existing tools to manipulate the results.  There are no agents, plugins, websites, or configuration files.
+4. Easy Administration - Administration tasks are well-documented and are only performed by one person.  Other DBAs only need that one line of code to use the program.
+5. Security - You can't see it but there are a lot of security features happening in the background.  In case you're worried, there are no public database links and no shared passwords.
+6. Exceptions and Metadata - The results, metadata, and exceptions are stored in tables.  The results from the last run can be views in these three views:
+
+[CODE]
+
+When you query hundreds of databases there will often be a problem.  But those problems are recorded and don't stop other processing.
+
+
+## What Can I Do With It?
+
+Those are the basic features.  Let's briefly look at some additional features, and more complex examples of problems you can solve with Method5.
+
+
+## Run as Procedure
+
+While it's neat to run a query that returns results, in practice you normally want to run statements asyhcnronously in a procedure.  The procedure `M5_PROC` will do exactly that.
+
+For example, this code locks user accounts with a password older than 60 days:
+
+[CODE]
+
+If you look at the DBMS_OUTPUT, it displays useful information about exactly what was run, and where.  [look at dbms_output]
+
+
+##TARGET LIST
+
+The second, optional parameter, lets you quickly and precisely specify targerts.
+
+Let's say you want to lock an account, but only on specific databases.  
+
+You can use comma-separated lists that include databases, environments, hosts, business names, and pattern-matching characters:
+
+[CODE]
+
+You can also use a query that returns target names, or configure a variable to represent a query:
+
+[CODE]
+[CODE]
+
+
+##TABLE NAME - Space Management
+
+Method5 stores results temporarily in tables with a default name.  If you want the results to stick around you can provide a custom table name with the parameter `P_TABLE_NAME`.
+
+For example, you can compare database segment sizes and save the results in a specific table for later analysis.
+
+[CODE]
+
+##TABLE EXISTS ACTION - Space Management
+
+You have several options if the table already exists.  You can set the parameter `P_TABLE_EXISTS_ACTION` to one of ERROR, APPEND, DELETE, or DROP.
+
+ In this example I'm using `APPEND` - it lets us gather data into the same table as the last step, perhaps because we want to store the data every day for space forecasting.
+
+[CODE]
+
+##ASYNCHRONOUS - Performance Tuning  (30 seconds)
+
+Setting the parameter `P_ASYNCHRONOUS` to TRUE or FALSE lets you choose if you want to wait for all the results or let the processing continue in the background.
+
+For example, let's say want to count active sessions to see which database has been the busiest in the past hour.  Setting `P_ASCYNCHRONOUS` to FALSE will make the procedure wait for all the results before it finishes.
+
+[CODE]
+
+##Summary
+
+Method5 doens't just make you faster.  It makes you so much faster that it can transform the way you work.
+
+
+For example, when a user had a problem but can't remember which database it happened in, you can usually figure it out for them:
+
+[CODE]
+
+When an environment is missing an index, don't just add the index, check for the missing index in other environments:
+
+[CODE]
+
+Sometimes you encounter strange problems, like bad performance caused by too many objecs in the recycle bin.  It's a rare problem and may never happen again, but it only takes a few seconds to check all your databases:
+
+[CODE]
+
+Over time you can collect these scripts and periodically run preventive maintenance checks.
+
+You can treat your entire data center like one database.  You can query and control it with just one line of code.
+
+Every time you find a problem, spend just one minute to think about ways to find it, fix it, and prevent it on all other databases.  A single query today can save you hours tomorrow.
+
+
+##More Information - https://method5.github.io/
+
+For more information visit the website, method5.github.io.  You can find other features in the user guide, look at examples, or download the code and start using it today.
