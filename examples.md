@@ -44,7 +44,6 @@ The screenshot shows the output exported to a spreadsheet.  The dense output may
 
 <img src="/images/example_compare_everything_everywhere.png">
 
-Source: TODO (convert internal program to public)
 
 <a name="asm_forecast"/>
 
@@ -62,8 +61,6 @@ This second chart shows a database at 99.9% capacity.  But don't freak out - it 
 
 <img src="/images/example_asm_forecast_not_growing.png">
 
-Source: TODO (convert internal program to public)
-
 
 <a name="active_session_counts"/>
 
@@ -77,8 +74,6 @@ When I aggregated session counts for 400 databases, for 60 hosts, it became obvi
 
 <img src="/images/example_active_sessions.png">
 
-Source: TODO (convert internal program to public)
-
 
 <a name="compare_parameters"/>
 
@@ -88,8 +83,6 @@ This report makes it trivial to compare all database parameters, for any set of 
 
 <img src="/images/example_compare_parameters.png">
 
-Source: TODO (convert internal program to public)
-
 
 <a name="space_treemap"/>
 
@@ -98,8 +91,6 @@ Source: TODO (convert internal program to public)
 These treemap visualizations help you discover exactly where your space is being used.
 
 <img src="/images/example_space_treemap.png">
-
-Source: TODO (convert internal program to public)
 
 
 <a name="synchronize_dba_users_job"/>
@@ -115,16 +106,12 @@ Automatically synchronize DBA accounts, privileges, profiles, status, and profil
 
 Before you spend a lot of time and money on an enterprise identity management solution there's a lot you can do with a few simple commands.  Activities like creating accounts, locking accounts, and synchronizing passwords across all databases can be done in one line of code.
 
-Source: TODO (convert internal program to public)
-
 
 <a name="email_active_dba_users_job"/>
 
 ## Email Active DBA Users Job
 
 Once it's trivial to gather data you can spend more time looking at potential access issues, such as a list of users with the DBA role.  No need to manage hundreds of crontabs or scheduler jobs.
-
-Source: TODO (convert internal program to public)
 
 
 <a name="lock_users_with_old_password_job"/>
@@ -133,7 +120,6 @@ Source: TODO (convert internal program to public)
 
 Did you know that Oracle accounts may automatically *expire* but never *lock*?  The security auditors do and they often expect a job to automatically lock old accounts.
 
-Source: TODO (convert internal program to public)
 
 <a name="global_database_statistics"/>
 
