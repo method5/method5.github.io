@@ -6,7 +6,7 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2017-02** _Scripts, v8.3.0._  Add useful scripts.  I've already got about 10 of them but they need to be cleaned up before they are released to the public.  8.3.0 will include improved admin emails, a "version star", and simplified installation.
+* **2017-03** _v8.3.0._  Improved admin emails, simplified installation, and a "version star" to handle column differences between database versions.
 * **2017** _v8.4.0: Run as SYS_  Add parameter P_RUN_AS_SYS to M5_PROC.  This may need to be an optional component since it may add unacceptable security concerns for some organizations.
 * **2017** _v9: Run shell scripts._  I've been using an internal solution for this, but it needs to be re-designed to work in other environments.
 * **2017** _v9.1: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
@@ -22,6 +22,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2017-02** *Scripts:* Added the first batch of example scripts.
 * **2016-12** *v8.2.0:* Added job timeouts, bug fixes and performance improvements.
 * **2016-11** *v8.1.0:* Added CLUSTER_NAME and Target Groups.
 * **2016-10** *v8.0.0:* Initial public release.
