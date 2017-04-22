@@ -31,7 +31,7 @@ Some of these issues may not apply to [SQLJ](https://en.wikipedia.org/wiki/SQLJ)
 
 If you're doing something inside a database then SQL is almost always the best language.  Most people are only familiar with the basics, for running `select * from employee;`.  But Oracle's SQL syntax is incredibly rich, there's hardly any programming task that can't be handled well with SQL.
 
-I've been hired a few times as a "PL/SQL Developer".  What that title really means that really means is that I wrote SQL and tied it together with PL/SQL.
+I've been hired a few times as a "PL/SQL Developer".  What that title really means is that I wrote SQL and tied it together with PL/SQL.
 
 Yes, Java has more powerful language features than PL/SQL.  But they are completely irrelevant 99% of the time.  A good Oracle database program will do almost all of the heavy lifting in SQL.  The procedure language just needs to tie it together.  So PL/SQL's improved integration features more than make up for being a less powerful language.
 
