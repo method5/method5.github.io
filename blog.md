@@ -2,6 +2,8 @@
 layout: default
 ---
 
+This blog is most for Oracle SQL and PL/SQL technical issues.  Although most articles won't be directly focused on Method5 they will help explain some of the architecture of Method5.
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
