@@ -6,7 +6,7 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2017** _v8.6.0: Run as SYS._  Add parameter P_RUN_AS_SYS to M5_PROC.  This may need to be an optional component since it may add unacceptable security concerns for some organizations.
+* **2017** _v8.7.0: Run as SYS._  Add parameter P_RUN_AS_SYS to M5_PROC.  This may need to be an optional component since it may add unacceptable security concerns for some organizations.
 * **2017** _v9: Run shell scripts._  I've been using an internal solution for this, but it needs to be re-designed to work in other environments.
 * **2017** _v9.1: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
 * **2017** _v10: Run using SQL\*Plus._  This isn't particularly useful but may be necessary to convince some old-school DBAs.
@@ -21,6 +21,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2017-05** _v8.6.0: M5_SYNCH_USER._  Added procedure M5_SYNCH_USER to simplify account management.
 * **2017-04** _v8.5.1: 12.2._  Add support for new 12.2 commands and long identifiers.
 * **2017-03** _v8.4.0: Version Star._  Added version star feature, LONG support, and other minor fixes.
 * **2017-02** *v8.3.0: Scripts.* Simpler installation, improved admin emails, first batch of example scripts.
