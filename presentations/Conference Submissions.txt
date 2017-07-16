@@ -1,4 +1,56 @@
 
+=======================================
+East Coast Oracle Users Conference 2017
+=======================================
+
+
+
+Abstract Title
+--------------
+Run SQL and PL/SQL on multiple databases with Method5 remote execution
+
+Abstract Description
+--------------------
+DBAs need to automate more than just common, pre-defined tasks. We need a more dynamic SQL and PL/SQL that lets us specify both what the statement is and where it runs. The open source program Method5 enables remote execution of SQL and PL/SQL. It starts with SELECT * FROM TABLE(M5('SELECT * FROM DUAL', 'DEV')); and has advanced features that can handle almost any task. PL/SQL, links, scheduler, pipes, and Data Cartridge create an agentless, fast, secure, and relational solution. Method5 is used to manage hundreds of databases and a petabyte of storage at the Centers for Medicare & Medicaid Services. Faster administration lets us get in the habit of spending an extra minute to find, fix, and prevent problems on all our databases.
+
+
+Presentation Summary
+--------------------
+Method5 is an open source program that extends Oracle SQL to allow parallel remote execution. It lets database administrators easily run SQL statements quickly and securely on hundreds of databases.  Querying and controlling multiple databases can be as simple as this: select * from table(m5('select * from dual', 'dev'));
+
+Most organization only automate a few obvious, pre-defined tasks.  Unexpected operational challenges don't have a scalable solution.  DBAs tend to avoid certain problems because they don't want to spend the time to manually run a command many times.
+
+Current automation tools can't transform the way you solve operational problems.  Existing tools are slow, complex, or insecure.  None of them are relational.
+
+The ideal solution is a new dynamic SQL syntax that lets you easily specify the "what", the "where", and the "how" for statements.
+
+Method5 is a robust open source implementation used for years in a large production environment.
+
+It has a simple function interface and a more powerful procedure interface.
+ 
+The program is fast, simple, relational, easy to administer, and secure.
+
+Parameters control what code is run, where it is run, and how it is run.
+
+Method5 was built using templated dynamic PL/SQL, links, a lexer, scheduler and pipes, table-driven configuration, and Oracle Data Cartridge.
+
+Installation is easy and agentless.  Administration is well-documented and performed by only one person.
+
+Examples - Account management, global data dictionary, schema comparisons, forecasts, and more.
+
+More information is available at http://method5.github.io and the GitHub repository.
+
+Method5 is so fast it can change the way you work: be proactive; treat all your databases as one logical database; and always spend the extra minute to find, fix, and prevent problems on all database.
+
+
+Bio
+---
+
+Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  Currently he is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stackoverflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
+
+
+
+
 
 ======================
 Oracle Open World 2017
