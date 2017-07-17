@@ -11,8 +11,7 @@ Run SQL and PL/SQL on multiple databases with Method5 remote execution
 
 Abstract Description
 --------------------
-DBAs need to automate more than just common, pre-defined tasks. We need a more dynamic SQL and PL/SQL that lets us specify both what the statement is and where it runs. The open source program Method5 enables remote execution of SQL and PL/SQL. It starts with SELECT * FROM TABLE(M5('SELECT * FROM DUAL', 'DEV')); and has advanced features that can handle almost any task. PL/SQL, links, scheduler, pipes, and Data Cartridge create an agentless, fast, secure, and relational solution. Method5 is used to manage hundreds of databases and a petabyte of storage at the Centers for Medicare & Medicaid Services. Faster administration lets us get in the habit of spending an extra minute to find, fix, and prevent problems on all our databases.
-
+Learn how to easily run commands on a large number of databases.  The open source program Method5 lets you quickly automate SQL and PL/SQL.  Remote execution is not just faster, it's a different mindset that lets you find, fix, and prevent many problems.  It starts as simple as SELECT * FROM TABLE(M5('SELECT * FROM DUAL', 'DEV')); and has advanced features to handle almost any task.
 
 Presentation Summary
 --------------------
@@ -45,7 +44,6 @@ Method5 is so fast it can change the way you work: be proactive; treat all your 
 
 Bio
 ---
-
 Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  Currently he is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stackoverflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
 
 
