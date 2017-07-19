@@ -11,7 +11,7 @@ Run SQL and PL/SQL on multiple databases with Method5 remote execution
 
 Abstract Description
 --------------------
-Learn how to easily run commands on a large number of databases.  The open source program Method5 lets you quickly automate SQL and PL/SQL.  Remote execution is not just faster, it's a different mindset that lets you find, fix, and prevent many problems.  It starts as simple as SELECT * FROM TABLE(M5('SELECT * FROM DUAL', 'DEV')); and has advanced features to handle almost any task.
+Learn how to easily run commands on a large number of databases.  The open source program Method5 lets you quickly automate SQL and PL/SQL.  Remote execution is not just faster, it's a different mindset that lets you find, fix, and prevent many problems.  It starts as simple as SELECT * FROM TABLE(M5(p_code => 'SELECT * FROM DUAL', p_targets => 'DEV')); and has advanced features to handle almost any task.
 
 Presentation Summary
 --------------------
