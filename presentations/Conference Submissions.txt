@@ -35,7 +35,7 @@ Method5 was built using templated dynamic PL/SQL, links, a lexer, scheduler and 
 
 Installation is easy and agentless.  Administration is well-documented and performed by only one person.
 
-Examples - Account management, global data dictionary, schema comparisons, forecasts, and more.
+Real-life examples and scripts - Account management for 125K schemas, global data dictionary for 40 million objects, massive schema comparisons across dozens of databases, forecasts for managing a petabyte of storage, and more.
 
 More information is available at http://method5.github.io and the GitHub repository.
 
@@ -44,7 +44,7 @@ Method5 is so fast it can change the way you work: be proactive; treat all your 
 
 Bio
 ---
-Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  Currently he is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stack Overflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
+Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  He is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stack Overflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
 
 
 
