@@ -7,7 +7,7 @@ East Coast Oracle Users Conference 2017
 
 Abstract Title
 --------------
-Run SQL and PL/SQL on multiple databases with Method5 remote execution
+Automate SQL and PL/SQL on many databases with Method5 remote execution
 
 Abstract Description
 --------------------
