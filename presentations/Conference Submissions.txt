@@ -17,7 +17,7 @@ Presentation Summary
 --------------------
 Method5 is an open source program that extends Oracle SQL to allow parallel remote execution. It lets database administrators easily run SQL statements quickly and securely on hundreds of databases.  Querying and controlling multiple databases can be as simple as this: select * from table(m5('select * from dual', 'dev'));
 
-Most organization only automate a few obvious, pre-defined tasks.  Unexpected operational challenges don't have a scalable solution.  DBAs tend to avoid certain problems because they don't want to spend the time to manually run a command many times.
+Most organizations only automate a few obvious, pre-defined tasks.  Unexpected operational challenges don't have a scalable solution.  DBAs tend to avoid certain problems because they don't want to spend the time to manually run a command many times.
 
 Current automation tools can't transform the way you solve operational problems.  Existing tools are slow, complex, or insecure.  None of them are relational.
 
@@ -44,7 +44,7 @@ Method5 is so fast it can change the way you work: be proactive; treat all your 
 
 Bio
 ---
-Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  Currently he is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stackoverflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
+Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  Currently he is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub and is active on Stack Overflow where he is a top user in Oracle and PL/SQL.  He has a Master of Computer Science degree from North Carolina State University.
 
 
 
