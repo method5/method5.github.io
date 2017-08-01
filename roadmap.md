@@ -20,7 +20,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
-* **2017-07** _v8.7.1: P_RUN_AS_SYS._  Added ability to run commands as SYS.
+* **2017-07** _v8.7.2: P_RUN_AS_SYS._  Added ability to run commands as SYS.
 * **2017-06** _v8.6.1: Bug fixes._  Allow un-aliased column expressions over 30 bytes.
 * **2017-05** _v8.6.0: M5_SYNCH_USER._  Added procedure M5_SYNCH_USER to simplify account management.
 * **2017-04** _v8.5.1: 12.2._  Add support for new 12.2 commands and long identifiers.
