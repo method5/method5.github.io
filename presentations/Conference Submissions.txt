@@ -1,9 +1,64 @@
+========================
+RMOUG Training Days 2018
+========================
+
+Title
+-----
+Automate SQL with Method5 remote execution
+
+
+Summary
+-------
+Learn how to easily run SQL, PL/SQL, and shell scripts on a large number of databases and hosts with the open source program Method5.  Remote execution is not just faster, it's a process that lets you find, fix, and prevent many problems that you would never solve one-database-at-a-time.  It starts as simply as SELECT * FROM TABLE(M5(p_code => 'SELECT * FROM DUAL', p_targets => 'DEV')); and can grow to solve complex tasks.
+
+
+Abstract
+--------
+
+Method5 is an open source program that extends Oracle SQL to allow parallel remote execution. It lets database administrators easily run SQL statements, PL/SQL blocks, and shell scripts quickly and securely on hundreds of databases.  Querying and controlling multiple databases can be as simple as this: select * from table(m5(p_code => 'select * from dual', p_targets => 'dev'));
+
+Most organizations only automate a few obvious, pre-defined tasks.  Unexpected operational challenges don't have a scalable solution.  DBAs tend to avoid certain problems because they don't have the time to logon to each database and run a command.
+
+Current automation tools can't transform the way you solve operational problems.  Existing tools are slow, complex, or insecure.  None of them are relational.
+
+The ideal solution is a new dynamic SQL syntax that lets you easily specify the "what", the "where", and the "how" for statements.
+
+Method5 is a robust, open source implementation used for years on a large government contract, managing over 400 databases and a petabyte of data.
+
+It has a simple function interface and a more powerful procedure interface.
+ 
+The program is fast, simple, relational, easy to administer, and secure.
+
+Parameters control what code is run, where it is run, and how it is run.
+
+Method5 was built using templated dynamic PL/SQL, links, a lexer, scheduler and pipes, table-driven configuration, and Oracle Data Cartridge.
+
+Installation is easy and agentless.  Administration is well-documented and performed by only one person.
+
+Real-life examples and scripts - Account management for 125K schemas, global data dictionary for 40 million objects, massive schema comparisons across dozens of databases, forecasts for managing a petabyte of storage, and more.
+
+More information, including the code, user guide, and a video tutorial, is available at http://method5.github.io.
+
+Method5 is so fast it can change the way you work: be proactive; treat all your databases as one logical database; and always spend the extra minute to find, fix, and prevent problems on all database.
+
+
+Topic
+-----
+Database Tools of the Trade
+
+
+Benefits
+--------
+
+1. Learn how relational remote execution can change the way you work.
+2. Learn how to quickly run SQL, PL/SQL, and shell scripts on a large number of targets.
+3. Identify tasks that can benefit from rapid SQL automation.
+
+
 
 =======================================
 East Coast Oracle Users Conference 2017
 =======================================
-
-
 
 Abstract Title
 --------------
