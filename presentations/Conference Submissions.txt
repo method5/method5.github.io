@@ -37,7 +37,7 @@ Installation is easy and agentless.  Administration is well-documented and perfo
 
 Real-life examples and scripts - Account management for 125K schemas, global data dictionary for 40 million objects, massive schema comparisons across dozens of databases, forecasts for managing a petabyte of storage, and more.
 
-More information, including the code, user guide, and a video tutorial, is available at http://method5.github.io.
+More information, including the code, user guide, and a video tutorial, is available at https://method5.github.io.
 
 Method5 is so fast it can change the way you work: be proactive; treat all your databases as one logical database; and always spend the extra minute to find, fix, and prevent problems on all database.
 
