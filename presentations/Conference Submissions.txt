@@ -51,7 +51,7 @@ Benefits
 --------
 
 1. Learn how relational remote execution can change the way you work.
-2. Learn how to quickly run SQL, PL/SQL, and shell scripts on a large number of targets.
+2. Learn how to quickly run SQL, PL/SQL, and shell scripts on a large number of databases and hosts.
 3. Identify tasks that can benefit from rapid SQL automation.
 
 
