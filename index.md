@@ -6,7 +6,7 @@ Method5 is an open source program that extends Oracle SQL to allow remote execut
 
 For example, you can quickly select data from all of your databases with one statement:
 
-```sql
+{% highlight sql %}
 SQL> select * from table(m5('select * from dual'));
 
 DATABASE_NAME  DUMMY
@@ -15,7 +15,7 @@ db01           X
 db02           X
 db03           X
 ...
-```
+{% endhighlight %}
 
 You can run any SQL statement, PL/SQL block, or Linux/Unix shell command inside the `M5` function. The function works with any SQL client and runs on any currently-supported platform, version, or edition of Oracle.
 
