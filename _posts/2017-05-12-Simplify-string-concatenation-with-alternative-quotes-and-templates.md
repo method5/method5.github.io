@@ -16,10 +16,17 @@ Here's a simple example that uses the alternative quoting mechanism to avoid esc
     execute immediate q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
+{% highlight sql %}
+execute immediate q'[ create database link ... using 'some_tns' ]';
+{% endhighlight %}
+
 {% highlight %}
     execute immediate q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
+{% highlight %}
+execute immediate q'[ create database link ... using 'some_tns' ]';
+{% endhighlight %}
 
 {% highlight python %}
     from scipy import ndimage as nd
