@@ -10,22 +10,22 @@ Combine the alternative quoting mechanism and templates to dramatically improve 
 
 Here's a simple example that uses the alternative quoting mechanism to avoid escaping single quotes:
 
-	execute immediate q'[ create database link ... using 'some_tns' ]';
+	execute immediate1 q'[ create database link ... using 'some_tns' ]';
 
 {% highlight sql %}
-    execute immediate q'[ create database link ... using 'some_tns' ]';
+    execute immediate2 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
 {% highlight sql %}
-execute immediate q'[ create database link ... using 'some_tns' ]';
+execute immediate3 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
 {% highlight %}
-    execute immediate q'[ create database link ... using 'some_tns' ]';
+    execute immediate4 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
 {% highlight %}
-execute immediate q'[ create database link ... using 'some_tns' ]';
+execute immediate5 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
 {% highlight python %}
