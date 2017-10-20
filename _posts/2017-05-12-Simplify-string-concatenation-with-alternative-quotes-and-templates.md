@@ -10,67 +10,27 @@ Combine the alternative quoting mechanism and templates to dramatically improve 
 
 Here's a simple example that uses the alternative quoting mechanism to avoid escaping single quotes:
 
+{% highlight plaintext %}
 	execute immediate1 q'[ create database link ... using 'some_tns' ]';
-
-{% highlight sql %}
-    execute immediate2 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
-
-{% highlight sql %}
-execute immediate3 q'[ create database link ... using 'some_tns' ]';
-{% endhighlight %}
-
-{% highlight plaintext %}
-execute immediate4 q'[ create database link ... using 'some_tns' ]';
-{% endhighlight %}
-
-{% highlight plaintext %}
-	execute immediate4 q'[ create database link ... using 'some_tns' ]';
-{% endhighlight %}
-
-
-{% highlight sql %}
-SQL> select * from table(m5('select * from dual'));
-
-DATABASE_NAME  DUMMY
--------------  -----
-db01           X
-db02           X
-db03           X
-...
-{% endhighlight %}
-
-{% highlight sql %}
-	SQL> select * from table(m5('select * from dual'));
-	
-	DATABASE_NAME  DUMMY
-	-------------  -----
-	db01           X
-	db02           X
-	db03           X
-	...
-{% endhighlight %}
-
-
-
-{% highlight python %}
-    from scipy import ndimage as nd
-{% endhighlight %}
-
 
 The alternative quoting mechanism allows almost any character to become the quote.  And the characters `{,[,(,<` are matched to `},],),>`.  This makes it much easier to embed code inside code - there's no need to change all single quotation mark.
 
 Here's a simple example of using a template for putting variables into a string:
 
+{% highlight plaintext %}
 	execute immediate replace(q'[
 		create database link using '#TNS#'
 	]', '#TNS#', v_tns);
+{% endhighlight %}
 
 There are template engines but a simple `replace` function works well enough.  This style allows keeping the dynamic code simple and as true to the real value as possible.  Dynamic code is complicated, adding a bunch of concatenation makes it even more complicated.
 
 Here's the concatenation version:
 
+{% highlight plaintext %}
 	execute immediate 'create database link ... using '''||v_tns||'''';
+{% endhighlight %}
 
 The concatenation version has less characters but the single quotes are ugly and confusing.  And this is the simplest possible example, it only gets worse.
 
