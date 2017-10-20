@@ -12,6 +12,11 @@ Here's a simple example that uses the alternative quoting mechanism to avoid esc
 
 	execute immediate q'[ create database link ... using 'some_tns' ]';
 
+{% highlight python %}
+    from scipy import ndimage as nd
+{% endhighlight %}
+
+
 The alternative quoting mechanism allows almost any character to become the quote.  And the characters `{,[,(,<` are matched to `},],),>`.  This makes it much easier to embed code inside code - there's no need to change all single quotation mark.
 
 Here's a simple example of using a template for putting variables into a string:
