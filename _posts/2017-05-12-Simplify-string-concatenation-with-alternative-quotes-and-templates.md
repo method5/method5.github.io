@@ -20,9 +20,37 @@ Here's a simple example that uses the alternative quoting mechanism to avoid esc
 execute immediate3 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
 
-{% highlight markdown %}
+{% highlight plaintext %}
 execute immediate4 q'[ create database link ... using 'some_tns' ]';
 {% endhighlight %}
+
+{% highlight plaintext %}
+	execute immediate4 q'[ create database link ... using 'some_tns' ]';
+{% endhighlight %}
+
+
+{% highlight sql %}
+SQL> select * from table(m5('select * from dual'));
+
+DATABASE_NAME  DUMMY
+-------------  -----
+db01           X
+db02           X
+db03           X
+...
+{% endhighlight %}
+
+{% highlight sql %}
+	SQL> select * from table(m5('select * from dual'));
+	
+	DATABASE_NAME  DUMMY
+	-------------  -----
+	db01           X
+	db02           X
+	db03           X
+	...
+{% endhighlight %}
+
 
 
 {% highlight python %}
