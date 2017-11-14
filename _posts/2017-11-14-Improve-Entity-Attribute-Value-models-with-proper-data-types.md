@@ -27,7 +27,7 @@ Those extra columns don't take away any of the benefits and alleviate many of th
 Pros and Cons
 -------------
 
-Here are some common points in EAV debates:
+Here are some common arguments in EAV debates:
 
 Pros
 1. Flexibility to add anything without schema changes.
@@ -72,11 +72,11 @@ It is difficult to control the order a SQL query is executed.  Without that gua
 {% highlight plaintext %}
 	select *
 	from eav
-	where name = 'Date of Birth
+	where name = 'Date of Birth'
 	and value = date '2000-01-01';
 {% endhighlight %}
 
-That query will *usually* work.  But it is not guaranteed to work because Oracle may check the value predicate before the name predicate, and not all values can compare to dates.
+That query will *usually* work.  But it is not guaranteed to work because Oracle may check the value predicate before the name predicate, and not all values can convert to dates.
 
 There is only one safe way to write that query:
 
