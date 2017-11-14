@@ -29,7 +29,7 @@ This statement:
 	select *
 	from employee
 	where employee.name = 'John Smith';
-{% highlight plaintext %}
+{% endhighlight %}
 
 Is simpler than this statement:
 
@@ -37,7 +37,7 @@ Is simpler than this statement:
 	select *
 	from employee e
 	where e.name = 'John Smith';
-{% highlight plaintext %}
+{% endhighlight %}
 
 The first version has more characters but fewer words.  It also has one less variable, the "e".  This is why aliases should typically be avoided.
 
@@ -45,13 +45,13 @@ Now compare this statement:
 
 {% highlight plaintext %}
 	select * from employee;
-{% highlight plaintext %}
+{% endhighlight %}
 
 With this statement:
 
 {% highlight plaintext %}
 	select * from emp;
-{% highlight plaintext %}
+{% endhighlight %}
 
 Again the first statement has more characters.  But all English speakers instantly know what an "employee" is.  Reading the full word requires virtually no attention.  The abbreviation "emp" is simple but it still requires a tiny amount of thought.  Why make people think more than they have to?
 
@@ -70,7 +70,7 @@ Compare the one-join-clause-to-rule-them-all approach:
 
 {% highlight plaintext %}
 	select * from t1, t2, t3, t4, t5, t6 ...
-{% highlight plaintext %}
+{% endhighlight %}
 
 With an inline view approach:
 
@@ -84,7 +84,7 @@ With an inline view approach:
 		select * from t4, t5, t6 ...
 	) view2
 		on view1...
-{% highlight plaintext %}
+{% endhighlight %}
 
 (Ignore the old-fashioned Oracle join syntax for now.  ANSI joins are superior but that's a separate topic.)
 
@@ -110,7 +110,7 @@ Tabs instead of spacing - indenting is for showing parent-child relationships, n
 	select ...
 	from ...
 	where ...
-{% highlight plaintext %}
+{% endhighlight %}
 
 vs.
 
@@ -118,7 +118,7 @@ vs.
 	select ...
 	  from ...
 	 where ...
-{% highlight plaintext %}
+{% endhighlight %}
 
 To some people the spaces versus tabs debate boils down to: tabs are sometimes faster but spaces can make things look prettier.
 
@@ -137,7 +137,7 @@ On a slightly related topic, this is why inline view parentheses should be on th
 		select ...
 		from ...
 	)
-{% highlight plaintext %}
+{% endhighlight %}
 
 Those parentheses are so important they deserve a separate line.  The code between them is an entire state and can exist separate from everything else in the query.  That inline view can be copied and pasted or debugged all by itself.  Inline views are the key to SQL - give them some space.
 
