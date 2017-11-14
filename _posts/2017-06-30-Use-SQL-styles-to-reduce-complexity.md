@@ -25,25 +25,33 @@ Only complexity as perceived by a human is important.  In general, people think 
 
 This statement:
 
+{% highlight plaintext %}
 	select *
 	from employee
 	where employee.name = 'John Smith';
+{% highlight plaintext %}
 
 Is simpler than this statement:
 
+{% highlight plaintext %}
 	select *
 	from employee e
 	where e.name = 'John Smith';
+{% highlight plaintext %}
 
 The first version has more characters but fewer words.  It also has one less variable, the "e".  This is why aliases should typically be avoided.
 
 Now compare this statement:
 
+{% highlight plaintext %}
 	select * from employee;
+{% highlight plaintext %}
 
 With this statement:
 
+{% highlight plaintext %}
 	select * from emp;
+{% highlight plaintext %}
 
 Again the first statement has more characters.  But all English speakers instantly know what an "employee" is.  Reading the full word requires virtually no attention.  The abbreviation "emp" is simple but it still requires a tiny amount of thought.  Why make people think more than they have to?
 
@@ -60,10 +68,13 @@ Once a simple character count is abandoned it is possible to think about code in
 
 Compare the one-join-clause-to-rule-them-all approach:
 
+{% highlight plaintext %}
 	select * from t1, t2, t3, t4, t5, t6 ...
+{% highlight plaintext %}
 
 With an inline view approach:
 
+{% highlight plaintext %}
 	select * from
 	(
 		select * from t1, t2, t3 ...
@@ -73,6 +84,7 @@ With an inline view approach:
 		select * from t4, t5, t6 ...
 	) view2
 		on view1...
+{% highlight plaintext %}
 
 (Ignore the old-fashioned Oracle join syntax for now.  ANSI joins are superior but that's a separate topic.)
 
@@ -94,15 +106,19 @@ This benefit does not extend to correlated subqueries and the WITH clause.  Thos
 Tabs instead of spacing - indenting is for showing parent-child relationships, not random text alignment
 --------------------------------------------------------------------------------------------------------
 
+{% highlight plaintext %}
 	select ...
 	from ...
 	where ...
+{% highlight plaintext %}
 
 vs.
 
+{% highlight plaintext %}
 	select ...
 	  from ...
 	 where ...
+{% highlight plaintext %}
 
 To some people the spaces versus tabs debate boils down to: tabs are sometimes faster but spaces can make things look prettier.
 
@@ -114,12 +130,14 @@ The beauty of spaces is an illusion.  The point of indenting is to show parent-c
 
 On a slightly related topic, this is why inline view parentheses should be on their own line like this:
 
+{% highlight plaintext %}
 	select *
 	from
 	(
 		select ...
 		from ...
 	)
+{% highlight plaintext %}
 
 Those parentheses are so important they deserve a separate line.  The code between them is an entire state and can exist separate from everything else in the query.  That inline view can be copied and pasted or debugged all by itself.  Inline views are the key to SQL - give them some space.
 
