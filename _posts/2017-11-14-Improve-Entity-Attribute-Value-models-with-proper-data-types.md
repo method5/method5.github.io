@@ -12,14 +12,14 @@ EAVs should use a table like this:
 	NUMBER_VALUE  NUMBER
 	STRING_VALUE  VARCHAR2(4000)
 	DATE_VALUE    DATE
-{% highlight plaintext %}
+{% endhighlight %}
 
 EAVs should avoid a simpler table structure like this:
 
 {% highlight plaintext %}
 	NAME   VARCHAR2(4000)
 	VALUE  VARCHAR2(4000)
-{% highlight plaintext %}
+{% endhighlight %}
 
 Those extra columns don't take away any of the benefits and alleviate many of the costs.
 
@@ -74,7 +74,7 @@ It is difficult to control the order a SQL query is executed.  Without that gua
 	from eav
 	where name = 'Date of Birth
 	and value = date '2000-01-01';
-{% highlight plaintext %}
+{% endhighlight %}
 
 That query will *usually* work.  But it is not guaranteed to work because Oracle may check the value predicate before the name predicate, and not all values can compare to dates.
 
@@ -90,7 +90,7 @@ There is only one safe way to write that query:
 		and rownum gte 1
 	)
 	where value = date '2000-01-01';
-{% highlight plaintext %}
+{% endhighlight %}
 
 That is the only safe way because ROWNUM is a special function that Oracle assumes means "these rows must be displayed in order".  Oracle will never push a predicate or view merge into an inline view with a ROWNUM.
 
@@ -124,7 +124,7 @@ For numbers, very few applications can handle all number formats.  Number valida
 
 {% highlight plaintext %}
 	([0-9]+\.[0-9]+|\.[0-9]+|[0-9]+)((e|E)(\+|-)?[0-9]+)?(f|F|d|D)?
-{% highlight plaintext %}
+{% endhighlight %}
 
 
 Always Use the Right Type
