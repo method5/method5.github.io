@@ -82,6 +82,8 @@ Method5 can be called as either a function or a procedure.  The function is `M5`
 
 The function `M5` is the simplest interface, and can start displaying values in less than a second.  Wrap any statement in this text: `select * from table(m5(q'[  ...  ]'));`.  The function accepts two parameters, `P_CODE` and `P_TARGETS`, which are explained more thoroughly later.
 
+{% highlight plaintext %}
+
 	SQL> select * from table(m5(q'[  select 'Hello, World!' hello_world from dual  ]'));
 	
 	DATABASE_NAME                  HELLO_WORLD
@@ -89,8 +91,11 @@ The function `M5` is the simplest interface, and can start displaying values in 
 	SOMEDB01                       Hello, World!
 	SOMEDB02                       Hello, World!
 	...
+{% endhighlight %}
 
 The procedure `M5_PROC` makes it possible to more programmatically run queries and save results.
+
+{% highlight plaintext %}
 
 	begin
 		m5_proc(
@@ -110,6 +115,7 @@ The procedure `M5_PROC` makes it possible to more programmatically run queries a
 	SOMEDB01                       X
 	SOMEDB02                       X
 	...
+{% endhighlight %}
 
 
 <a name="alternative_quoting_mechanism"/>
@@ -137,9 +143,12 @@ Serious errors during a run may make the metadata counts partially incorrect.  F
 
 To simplify queries, Method5 always creates 3 views in your schema that refer to the latest tables.  Instead of worrying about the table names just run these statements:
 
+{% highlight plaintext %}
+
 	select * from m5_results;
 	select * from m5_metadata;
 	select * from m5_errors;
+{% endhighlight %}
 
 
 <a name="parameter_p_code"/>
@@ -162,6 +171,8 @@ Those problems can normally be avoided by explicitly listing the columns that ar
 
 PL/SQL blocks let you run multiple statements and package them in one call.  Use `DBMS_OUTPUT.PUT_LINE` to display information.
 
+{% highlight plaintext %}
+
 	begin
 		m5_proc(q'[  begin dbms_output.put_line('Hello, World!'); end;  ]', 'somedb%');
 	end;
@@ -173,10 +184,13 @@ PL/SQL blocks let you run multiple statements and package them in one call.  Use
 	------------------------------ -------------
 	SOMEDB01                       Hello, World!
 	...
+{% endhighlight %}
 
 **DDL, DML, System Control**
 
 Commands like `DROP`, `INSERT`, or `ALTER SYSTEM` will return a message identical to the SQL*Plus feedback message.  (But Method5 does not use SQL*Plus.)
+
+{% highlight plaintext %}
 
 	SQL> select * from table(m5('alter user jheller profile some_profile'));
 
@@ -184,10 +198,13 @@ Commands like `DROP`, `INSERT`, or `ALTER SYSTEM` will return a message identica
 	------------------------------ -------------
 	SOMEDB01                       User altered.
 	...
+{% endhighlight %}
 
 **Shell Command**
 
 Linux or Unix shell commands and scripts must start with a shebang.  For example:
+
+{% highlight plaintext %}
 
 	begin
 		m5_proc(
@@ -207,6 +224,7 @@ Linux or Unix shell commands and scripts must start with a shebang.  For example
 	dev2                 1  03:28:09 up 73 days, 15:08,  0 users,  load average: 0.00, 0.03, 0.05
 	dev3                 1   3:29am  up 39 day(s), 10:54,  0 users,  load average: 0.41, 0.41, 0.42
 	...
+{% endhighlight %}
 
 There are some limitations when running shell commands.  Method5 is great at running small commands for rapid troubleshooting and fixes.  But it is not meant to be a full operating system deployment tool like Fabric, Salt, or Ansible.
 
@@ -228,9 +246,14 @@ The value may also use the Oracle pattern matching syntax, `%` and `_`.
 
 For example, if you want all development databases, as well as ones on the ACME contract (line of business), and some other custom databases:
 
+{% highlight plaintext %}
+
 	p_targets => 'dev,acme,coyote%'
+{% endhighlight %}
 
 For advanced target list logic you can use a SQL query that returns database names.  You may want to use the table M5_DATABASE to find relevant database names.  For example:
+
+{% highlight plaintext %}
 
 	select * from table(m5(
 		'select * from dual;',
@@ -247,16 +270,22 @@ For advanced target list logic you can use a SQL query that returns database nam
 	porcl123                       X
 	porcl234                       X
 	...
+{% endhighlight %}
 
 The value may also use an optional Target Group, which is identified by starting with a `$`.  Target Groups are pre-defined queries so complicated logic doesn't need to be repeated.
 
 For example, it can be tricky to query only one database per ASM instance.  Once you set up the target group with the name `ASM`, it can be used like this:
 
+{% highlight plaintext %}
+
 	select * from table(m5('select * from v$asm_disk', '$asm'));
+{% endhighlight %}
 
 See `administer_method5.md` for how to setup a Target Group.
 
 Method5 will generate the error ORA-20404 if the target list does not match any configured databases.  If it is acceptable for your processes to occasionally not match any targets you can catch and ignore the exception like this:
+
+{% highlight plaintext %}
 
 	declare
 		v_no_targets_were_found exception;
@@ -267,6 +296,7 @@ Method5 will generate the error ORA-20404 if the target list does not match any 
 		null;
 	end;
 	/
+{% endhighlight %}
 
 For shell scripts `P_TARGETS` identifies which host to run the script on.
 
@@ -343,7 +373,10 @@ You can add your own easily by following the examples in `code/install_method5_g
 
 Using `**` instead of `*` when querying targets that include multiple versions of Oracle can avoid problems with column differences:
 
+{% highlight plaintext %}
+
 	SQL> select * from table(m5('select ** from v$parameter'));
+{% endhighlight %}
 
 Querying the data dictionary can be tricky when the targets include multiple versions of Oracle.  A regular `*` will return different columns depending on the version.  Which means the process may throw either "not enough values" or "too many values" depending on which version is used to determine the column list.
 
@@ -359,6 +392,8 @@ The data dictionary is almost always backwards compatible.  The most likely vers
 Rarely a version difference makes it necessary to query different tables depending on the database version.  This complex situation can be solved with DBMS_XMLGEN.GETXML.
 
 The below code reads the latest patch from each database.  Due to an Oracle bug the data is not available in the same tables in 11g and 12c.  The function DBMS_XMLGEN.GETXML provides a way to conditionally run SQL.
+
+{% highlight plaintext %}
 
 	begin
 		m5_proc(
@@ -402,6 +437,7 @@ The below code reads the latest patch from each database.  Due to an Oracle bug 
 		);
 	end;
 	/
+{% endhighlight %}
 
 
 <a name="#job_timeout"/>
@@ -412,9 +448,12 @@ Method5 jobs will automatically timeout and be stopped after 23 hours.  When que
 
 If you need queries to run longer than 23 hours you can configure the timeout like this:
 
+{% highlight plaintext %}
+
 	update method5.m5_config
 	set number_value = $NEW_NUMBER
 	where config_name = 'Job Timeout (seconds)';
+{% endhighlight %}
 
 When jobs time out they are recorded in the table METHOD5.M5_JOB_TIMEOUT.  That table can be useful for identifying misbehaving databases.
 
@@ -440,6 +479,8 @@ LONG columns are automatically converted to CLOBs.  This can make some data dict
 
 For example, `DBA_TAB_COLS.DATA_DEFAULT` is a LONG and difficult to query.  Gather the data like this:
 
+{% highlight plaintext %}
+
 	begin
 		m5_proc(
 			p_code       => 'select * from dba_tab_cols where data_default is not null',
@@ -448,13 +489,17 @@ For example, `DBA_TAB_COLS.DATA_DEFAULT` is a LONG and difficult to query.  Gath
 		);
 	end;
 	/
+{% endhighlight %}
 
 Now use the results table to more easily query and filter the `DATA_DEFAULT` column:
+
+{% highlight plaintext %}
 
 	select database_name, owner, table_name, column_name, to_char(data_default)
 	from columns_with_defaults
 	where to_char(data_default) = '0'
 	order by 1,2,3,4;
+{% endhighlight %}
 
 
 <a name="m5_synch_user"/>
