@@ -87,7 +87,7 @@ There is only one safe way to write that query:
 		select *
 		from eav
 		where name = 'Date of Birth'
-		and rownum gte 1
+		and rownum >= 1
 	)
 	where value = date '2000-01-01';
 {% endhighlight %}
