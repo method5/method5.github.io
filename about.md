@@ -30,7 +30,7 @@ permalink: /about/
 
   <tr>
     <td class="vertical_align_middle">
-      Method5's development is supported by Ventech Solutions.  If you need training, configuration, or custom development, contact <a href="mailto:hjon@ventechsolutions.com?Subject=Method5" target="_top">Jon Heller</a>.      
+      Method5's development is supported by Ventech Solutions.  If you need training, configuration, or custom development, contact <a href="mailto:jon@jonheller.org?Subject=Method5" target="_top">Jon Heller</a>.      
     </td>
     <td class="vertical_align_middle">
       <a href="http://www.ventechsolutions.com/">
