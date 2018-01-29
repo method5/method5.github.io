@@ -10,7 +10,7 @@ The best way to get involved with Method5 is through [the GitHub repository.](ht
 
 Or fork the code, make changes, and create a pull request.
 
-Or you can email me at <a href="mailto:hjon@ventechsolutions.com?Subject=Method5" target="_top">hjon@ventechsolutions.com</a>.
+Or you can email me at <a href="mailto:jon@jonheller.org?Subject=Method5" target="_top">jon@jonheller.org</a>.
 
 Tips for developing
 -------------------
