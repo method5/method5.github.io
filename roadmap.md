@@ -14,7 +14,7 @@ Possible Future Changes:
 * **2018** _v13: Web interface._  Method5 is a SQL extension, part of a programming language.  A website doesn't make sense in a lot of ways.  But eventually this may be necessary to convince managers.
 * **2018** _Subproject - Monitoring Program._ Method5 could be used to build a database monitoring system.  A simpler version of Oracle Enterprise Manager, one that focuses on using simple tables and SQL statements for monitoring.
 
-The plans get increasingly more speculative as the time increases.  If you would like to request a feature please [create an issue on the repository](https://github.com/method5/method5/issues) or email me at hjon@ventechsolutions.com.
+The plans get increasingly more speculative as the time increases.  If you would like to request a feature please [create an issue on the repository](https://github.com/method5/method5/issues) or email me at jon@jonheller.org.
 
 
 Release History:
