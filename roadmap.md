@@ -6,12 +6,12 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2017** _v9.0: Security Enhancements._  Add more configurable privileges.  Instead of only using the DBA role, allow complete control over the privileges used.  This will allow Method5 to be usable by junior DBAs, production data analysts, or organizations that can't grant DBA to their DBAs.
-* **2017** _Subproject - Security Program._ Method5 could be used to build a security compliance program.  Most security tools are just a collection of SQL statements from the STIG.  It might be relatively easy to build a better version of those expensive programs.
+* **2018-02** _v9.0: Security Enhancements._  Add more configurable privileges.  Instead of only using the DBA role, allow complete control over the privileges used.  This will allow Method5 to be usable by junior DBAs, production data analysts, or organizations that can't grant DBA to their DBAs.
+* **2018** _Subproject - Security Program._ Method5 could be used to build a security compliance program.  Most security tools are just a collection of SQL statements from the STIG.  It might be relatively easy to build a better version of those expensive programs.
 * **2018** _v10: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
 * **2018** _v11: Run SQL\*Plus scripts._  This isn't particularly useful but may be necessary to convince some old-school DBAs.
 * **2018** _v12: Offline shell script running with scheduler agents._  This optional feature would add a lot of complexity.  But it would allow Method5 to automate boring tasks like installations and patching.  This would make it a more direct competitor to products like Salt and Ansible.
-* **2018** _v13: Web interface._  Method5 is a SQL extension, part of a programming language.  A website doesn't make sense in a lot of ways.  But eventually this may be necessary to convince managers.
+* **2018** _v13: Web interface._  An APEX front-end to Method5 could help some users.  It would primarily be a SQL editor with  hints on how to use the Method5 APIs.  Sort of like SQL Fiddle.  It could also include screens for helping with administrative tasks, such as setting up Method5 users, roles, and other configuration.
 * **2018** _Subproject - Monitoring Program._ Method5 could be used to build a database monitoring system.  A simpler version of Oracle Enterprise Manager, one that focuses on using simple tables and SQL statements for monitoring.
 
 The plans get increasingly more speculative as the time increases.  If you would like to request a feature please [create an issue on the repository](https://github.com/method5/method5/issues) or email me at jon@jonheller.org.
