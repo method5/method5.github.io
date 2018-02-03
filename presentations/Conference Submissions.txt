@@ -1,3 +1,29 @@
+=========
+GLOC 2018
+=========
+
+Abstract Title
+--------------
+Automate SQL with Method5 remote execution
+
+Abstract Summary: (Up to 300 words)
+-----------------------------------
+Learn how to easily run SQL, PL/SQL, and shell scripts on a large number of databases and hosts with the open source program Method5.  Remote execution is not just faster; it's a process that lets you find, fix, and prevent many problems that you would never solve one-database-at-a-time.  Querying and controlling all your databases starts with this one line of code and can grow to solve many complex problems: SELECT * FROM TABLE(M5(p_code => 'SELECT * FROM DUAL', p_targets => 'DEV'));
+ 
+Real-life examples will show how this new type of dynamic SQL can help administrators, analysts, and developers automate many Oracle tasks.  You will also learn about the agentless architecture and installation of the program, as well as how to precisely control privileges.
+
+For reviewers: More information, including the code, user guide, and a video tutorial, is available at https://method5.github.io
+
+Presenter Bio
+-------------
+Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  He enjoys creating open source software and is a top user in the Oracle and PL/SQL tags on Stack Overflow.
+
+
+
+
+
+
+
 ===========
 KScope 2018
 ===========
