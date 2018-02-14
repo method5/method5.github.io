@@ -30,7 +30,7 @@ And the advanced examples show the full power of Method5.  When the data gatheri
 3. [Lock Users with Old Password Job.sql](#lock_users_with_old_password_job)
 4. [Global Database Statistics.sql](#global_database_statistics)
 
-The source code for these examples can be found at [the GitHub repository](https://github.com/method5/method5/tree/master/scripts).  (Note: Not all of the script source code will be available until February 2017.  I am still in the process of converting our internal scripts to public scripts.)
+The source code for these examples can be found at [the GitHub repository](https://github.com/method5/method5/tree/master/examples).  (Note: Not all of the script source code will be available until February 2017.  I am still in the process of converting our internal scripts to public scripts.)
 
 ---
 
