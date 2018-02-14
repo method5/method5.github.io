@@ -2,7 +2,7 @@
 layout: page
 ---
 
-Method5 is an open source program that extends Oracle SQL to allow remote execution. It lets database administrators easily run SQL statements quickly and securely on hundreds of databases.
+Method5 is an open source program that extends Oracle SQL to allow remote execution.  It lets database administrators, developers, data analysts, system administrators, security engineers, and other users easily run SQL, PL/SQL, and shell scripts quickly and securely on hundreds of databases.
 
 For example, you can quickly select data from all of your databases with one statement:
 
