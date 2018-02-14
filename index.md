@@ -35,7 +35,7 @@ This can tip the scales in favor of custom solutions instead of expensive commer
 
 ---
 
-See [the user guide](https://github.com/VentechCMS/method5/blob/master/user_guide.md) for an explanation of all the features, such as: parameters that control the targets and how the statements are run; where the data, metadata, and errors are stored; running as a procedure; and much more.
+See [the user guide](https://github.com/method5/method5/blob/master/user_guide.md) for an explanation of all the features, such as: parameters that control the targets and how the statements are run; where the data, metadata, and errors are stored; running as a procedure; and much more.
 
 ---
 
