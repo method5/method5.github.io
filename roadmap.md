@@ -6,7 +6,6 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2018-02** _v9.0: Security Enhancements._  Add more configurable privileges.  Instead of only using the DBA role, allow complete control over the privileges used.  This will allow Method5 to be usable by junior DBAs, production data analysts, or organizations that can't grant DBA to their DBAs.
 * **2018** _Subproject - Security Program._ Method5 could be used to build a security compliance program.  Most security tools are just a collection of SQL statements from the STIG.  It might be relatively easy to build a better version of those expensive programs.
 * **2018** _v10: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
 * **2018** _v11: Run SQL\*Plus scripts._  This isn't particularly useful but may be necessary to convince some old-school DBAs.
@@ -20,6 +19,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2018-02** _v9.0: Security Enhancements._  Added configurable privileges.  Now non-DBAs can safely use Method5.
 * **2017-10** _v8.8.4: Shell commands._  Added ability to run Linux/Unix shell commands and scripts.
 * **2017-07** _v8.7.2: P_RUN_AS_SYS._  Added ability to run commands as SYS.
 * **2017-06** _v8.6.1: Bug fixes._  Allow un-aliased column expressions over 30 bytes.
