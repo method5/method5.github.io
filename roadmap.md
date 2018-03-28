@@ -19,6 +19,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2018-03** _v9.2.0: Bug fixes and installer improvements._ Added support for DB_DOMAIN, cleaned up and simplified installer and documentation.
 * **2018-02** _v9.0: Security Enhancements._  Added configurable privileges.  Now non-DBAs can safely use Method5.
 * **2017-10** _v8.8.4: Shell commands._  Added ability to run Linux/Unix shell commands and scripts.
 * **2017-07** _v8.7.2: P_RUN_AS_SYS._  Added ability to run commands as SYS.
