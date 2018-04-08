@@ -19,6 +19,7 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2018-04** _v9.2.2: Bug fixes and installer improvements._ Improved multitenant and OS script support, cleaned up and simplified installer and documentation.
 * **2018-03** _v9.2.0: Bug fixes and installer improvements._ Added support for DB_DOMAIN, cleaned up and simplified installer and documentation.
 * **2018-02** _v9.0: Security Enhancements._  Added configurable privileges.  Now non-DBAs can safely use Method5.
 * **2017-10** _v8.8.4: Shell commands._  Added ability to run Linux/Unix shell commands and scripts.
