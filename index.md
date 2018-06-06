@@ -17,11 +17,15 @@ db03           X
 ...
 {% endhighlight %}
 
-You can run any SQL statement, PL/SQL block, or Linux/Unix shell command inside the `M5` function. The function works with any SQL client and runs on any currently-supported platform, version, or edition of Oracle.
+You can run any SQL statement, PL/SQL block, or Linux/Unix shell command inside the `M5` function or the `M5_PROC` procedure.
+
+The function works with any SQL client and runs on any currently-supported platform, version, or edition of Oracle.  The program lives entirely inside an Oracle database and does not require any additional hardware, privileges, binaries, or money.
+
+Download the full program [here](https://github.com/method5/method5/archive/master.zip).
 
 ---
 
-Method5 helps DBAs quickly solve many operational problems.  It can also provide a solid foundation for building robust solutions to common database problems, such as:
+Method5 helps database professionals quickly solve many operational problems.  It can also provide a solid foundation for building robust solutions to common database problems, such as:
 
 <ul class="checkmark">
   <li> Account Management</li>
