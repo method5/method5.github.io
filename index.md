@@ -28,10 +28,10 @@ Download the full program [here](https://github.com/method5/method5/archive/mast
 Method5 helps database professionals quickly solve many operational problems.  It can also provide a solid foundation for building robust solutions to common database problems, such as:
 
 <ul class="checkmark">
-  <li> Account Management - such as [m5_sync_user](https://github.com/method5/method5/blob/master/examples/Account%20Maintenance.sql)</li>
+  <li> Account Management - such as <a href="https://github.com/method5/method5/blob/master/examples/Account%20Maintenance.sql">m5_sync_user</a></li>
   <li> Monitoring</li>
   <li> Security Compliance</li>
-  <li> Configuration Management - such as [Snare](https://github.com/method5/method5/blob/master/examples/Snare%20-%20Configuration%20Comparison.sql)</li>
+  <li> Configuration Management - such as <a href="https://github.com/method5/method5/blob/master/examples/Snare%20-%20Configuration%20Comparison.sql">Snare</a></li>
   <li> Preventive Maintenance</li>
 </ul>
 
