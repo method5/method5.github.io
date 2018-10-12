@@ -40,10 +40,9 @@ Practical Algorithm Analysis for Oracle Developers
 
 Abstract Description (1200 characters, used by the committee to evaluate your abstract for submission):
 --------------------
-
 Oracle performance tuning is tough and requires different approaches.  Most tuning guides focus on collections of tips and tricks, present results as simple ratios, and don't explain how performance will scale with the data.
 
-Algorithm analysis gives us another way to understand performance.  This presentation discusses functions that represent the worst-case performance of many common Oracle operations.  The functions and operations discussed are:
+Algorithm analysis gives us another way to understand performance.  This presentation discusses the following functions, which describe the worst-case performance of many common Oracle operations:
 1/N           : sequence caching, bulk collect limit, prefetch, arraysize, union all
 1             : (perfect) hash lookup, rownum
 LOG(N)        : index lookup
@@ -54,7 +53,9 @@ N^2           : cross join, nested loops
 N!            : join order
 infinity      : the optimizer trying to solve the halting problem
 
-The computational complexity of Oracle operations adds another useful way to understand database performance.  We can use a few functions to better compare and predict performance as our databases grow.
+The computational complexity of Oracle operations adds another useful way to understand database performance.  We can use a few functions to better compare and predict performance as our databases grow. 
+
+This presentation includes material from the book Pro Oracle SQL Development, under contract with Apress.
 
 
 Presentation Summary (1200 characters, provides information to the attendees regarding the content they should expect to learn during the presentation):
