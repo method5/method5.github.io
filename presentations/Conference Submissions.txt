@@ -1,3 +1,115 @@
+=========
+IOUG 2019
+=========
+
+Bio:
+----
+Jon Heller is an expert SQL and PL/SQL programmer with over 15 years of Oracle experience.  He is a DBA for Ventech Solutions in Urbandale, Iowa.  He enjoys creating open source software on GitHub, and answering questions on Stack Overflow where he is a top user in Oracle and PL/SQL.  Jon has a Master of Computer Science degree from North Carolina State University.
+
+
+Session Title
+-------------
+Automate SQL with Method5 Open Source Remote Execution
+
+
+Abstract:
+---------
+
+Learn how to easily run SQL, PL/SQL, and shell scripts on a large number of databases and hosts.  The open source program Method5 provides agentless remote execution, built entirely inside Oracle.  Remote execution lets us find, fix, and prevent problems that could never be solved one-database-at-a-time.  Querying and controlling all our databases starts with this one line of code, and can grow to solve many complex problems: SELECT * FROM TABLE(M5(p_code => 'SELECT * FROM DUAL', p_targets => 'DEV'));
+
+
+Learning Objectives:
+--------------------
+
+1. Learn how to quickly run SQL, PL/SQL, and shell scripts on a large number of databases and hosts.
+2. Learn how relational remote execution can change the way you work.
+3. Identify tasks that can benefit from rapid SQL automation.
+
+Abstract Description (1200 characters, used by the committee to evaluate your abstract for submission):
+--------------------
+
+A. INTRODUCTION: Method5 is an open source program that extends Oracle SQL to allow parallel remote execution. It lets database users easily run SQL statements, PL/SQL blocks, and shell scripts quickly and securely on hundreds of databases.  Querying and controlling multiple databases can be as simple as this single line of code: select * from table(m5(p_code => 'select * from dual', p_targets => 'dev'));
+
+B. AUTOMATION GAP: Most organizations only automate a few obvious, predefined tasks.  Unexpected operational challenges don't have a scalable solution.  DBAs tend to avoid certain problems because they don't have the time to logon to each database and run a command.  Current automation tools can't transform the way you solve operational problems.  Existing tools are slow, complex, or insecure.  Most importantly, none of the other tools are relational.
+
+C. IDEAL SOLUTION: The ideal solution is a new dynamic SQL syntax that lets you easily specify the "what", the "where", and the "how" for statements.  With Oracle data cartridge it is possible to invent a new type of SQL.
+
+D. PROJECT HISTORY: Method5 is a robust, open source implementation designed for large environments.  Its first installation was for a large government contract, managing over 400 databases and a petabyte of data.
+
+E. API: The program has a simple function interface and a more powerful procedure interface.  Parameters control what code is run, where it is run, and how it is run.  The results, metadata, and errors are stored in convenient tables and views.  Some other useful features are automatically managed database links, a global data dictionary, and many add-ons to handle common tasks.
+
+F. ADVANTAGES COMPARED TO OTHER REMOTE EXECUTION PROGRAMS: The program is relational, fast, simple, easy to administer, secure, and gracefully handles exceptions and metadata.
+
+G. REAL-LIFE EXAMPLES: Massive schema comparisons across dozens of databases, performance tuning across hundreds of databases, forecasts and visualizations for managing a petabyte of storage, managing and synchronizing 125K schemas, global data dictionary for 40 million objects, and many one-line ad hoc queries.
+
+H. ARCHITECTURE: Method5 was built using templated dynamic PL/SQL, links, a lexer, scheduler, pipes, a table-driven configuration, and Oracle Data Cartridge.
+
+I. INSTALLATION AND ADMINISTRATION: Everything is done inside an Oracle database.  The agentless installation is easy and requires no additional hardware, editions, options, privileges, or binary files.  Administration is well-documented and performed by only one person.  Method5 is orders of magnitude simpler to install and use than other remote execution programs.
+
+J. SECURITY: Method5 is a great tool for securing databases, and the program itself has been carefully hardened.  Both the program and the users can be precisely controlled to limit the databases, features, and privileges allowed.
+
+K. YOUR NEW MISSION - AUTOMATE EVERYTHING: Method5 is so fast it can change the way you work.  Be proactive; treat all your databases as one logical database; and always spend the extra minute to find, fix, and prevent problems on all databases.
+
+L. More information, including the code, user guide, and a video tutorial, is available at https://method5.github.io.
+
+IOUG confirmation number: 281
+
+
+
+
+Session Title
+-------------
+Practical Algorithm Analysis for Oracle Developers
+
+
+Abstract:
+---------
+
+Learn how to use simple algorithm analysis for Oracle performance tuning.  Finding the mathematical functions that describe the computational complexity of different operations can help us understand and predict performance.  This presentation will discuss common functions such as 1/N, LOG(N), N, N*LOG(N), N^2, and N!, and how they can help us understand operations such as sequence caching, bulk collect limit, index access, full table scans, hashing, sorting, joining, parallel processing, and choosing execution plans.  This presentation also discusses times when the computational complexity is negated by implementation details.  With a new way of looking at simple mathematical functions we can add algorithm analysis to our performance tuning toolkit.
+
+Learning Objectives:
+--------------------
+
+1. Learn how to use simple algorithm analysis to better measure performance.
+2. Better understand indexes, hashing, sorting, parallel processing, and the optimizer.
+3. Stop wasting time on settings that cannot theoretically improve performance, such as excessive sequence caching and bulk collect limit sizes.
+
+Outline / Content Structure:
+----------------------------
+
+A. Introduction
+  1. Performance tuning is tough and requires different approaches
+  2. More than just tips and tricks
+  3. Simple ratios don't describe how performance will scale with data
+
+B. Algorithm analysis
+  1. History of computational complexity
+  2. Asymptotic analysis - Big O notation
+  3. Simple examples.
+
+C. Visualization and discussion of relevant functions.
+  1. 1/N           : sequence caching, bulk collect limit, prefetch, arraysize, union all
+  2. 1             : (perfect) hash lookup, rownum
+  3. LOG(N)        : index lookup
+  4. 1/((1-P)+P/N) : Amdahl's law for parallel processing
+  5. N             : full table scan, (bad) hash lookup
+  6. N*LOG(N)      : order by, sort merge join, hash join, global versus local indexes
+  7. N^2           : cross join, nested loops
+  8. N!            : join order
+  9. infinity      : the optimizer trying to solve the halting problem
+
+D. Summary
+  1. Adjust our expectations for testing
+  2. Theory versus practice
+
+(This presentation includes material from the book Pro Oracle SQL Development, under contract with Apress.)
+
+IOUG confirmation number: 281
+
+
+
+
+
 ==========
 RMOUG 2019
 ==========
