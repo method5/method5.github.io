@@ -6,7 +6,7 @@ title: Roadmap
 Possible Future Changes:
 ------------------------
 
-* **2018** _Subproject - Security Program._ Method5 could be used to build a security compliance program.  Most security tools are just a collection of SQL statements from the STIG.  It might be relatively easy to build a better version of those expensive programs.
+* **2019** _Subproject - Security Program._ Method5 could be used to build a security compliance program.  Most security tools are just a collection of SQL statements from the STIG.  It might be relatively easy to build a better version of those expensive programs.
 * **?** _v10: File copy._  A simple way to copy files from the management host to other hosts could be helpful for running scripts.
 * **?** _v11: Run SQL\*Plus scripts._  This isn't particularly useful but may be necessary to convince some old-school DBAs.
 * **?** _v12: Offline shell script running with scheduler agents._  This optional feature would add a lot of complexity.  But it would allow Method5 to automate boring tasks like installations and patching.  This would make it a more direct competitor to products like Salt and Ansible.
@@ -19,6 +19,8 @@ The plans get increasingly more speculative as the time increases.  If you would
 Release History:
 ----------------
 
+* **2019-03** _v9.4.0: Amazon RDS and bug fixes._ Added support for RDS, improved link automation and cleanup, fixed RAC bugs.
+* **2019-01** _v9.3.3: Bug fixes_ Many tiny bug fixes.
 * **2018-07** _v9.3.1: Snare and bugfixes._ Added Snare for configuration comparisons, fixed some DB_DOMAIN bugs.
 * **2018-04** _v9.2.2: Bug fixes and installer improvements._ Improved multitenant and OS script support, cleaned up and simplified installer and documentation.
 * **2018-03** _v9.2.0: Bug fixes and installer improvements._ Added support for DB_DOMAIN, cleaned up and simplified installer and documentation.
