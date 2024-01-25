@@ -18,7 +18,7 @@ And the advanced examples show the full power of Method5.  When the data gatheri
 
 1. [Compare Everything Everywhere.sql](#compare_everything_everywhere)
 2. [ASM Forecast.sql](#asm_forecast)
-3. [Active Sessions.sql](#active_sessions)
+3. [Active Sessions.sql](#active_session_counts)
 4. [Compare Parameters.sql](#compare_parameters)
 5. [Space Treemap.sql](#space_treemap)
 6. [Synchronize DBA Users Job.sql](#synchronize_dba_users_job)
